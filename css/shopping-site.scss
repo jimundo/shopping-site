@@ -70,6 +70,7 @@ a {
     .sp_navi {
         position: relative;
         margin-bottom: 3px;
+        margin-left: -10px;
 
         @media (min-width: 551px) {
             display: none;

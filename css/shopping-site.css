@@ -36,7 +36,8 @@ a {
         display: inline-block; } }
   .header-in .sp_navi {
     position: relative;
-    margin-bottom: 3px; }
+    margin-bottom: 3px;
+    margin-left: -10px; }
     @media (min-width: 551px) {
       .header-in .sp_navi {
         display: none; } }
