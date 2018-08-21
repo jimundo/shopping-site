@@ -67,17 +67,49 @@ a {
         }
     }
 
-    .sp_navi {
-        position: relative;
-        margin-bottom: 3px;
-        margin-left: -10px;
+}
 
-        @media (min-width: 551px) {
-            display: none;
-        }
+
+.sp_navi {
+    position: relative;
+    margin-bottom: 3px;
+
+    @media (min-width: 551px) {
+        display: none;
     }
+}
+
+.sp_navi_li {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    background: #ff6d77;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    list-style: none;
+    padding: 15px 10px 15px 10px;
+    margin-bottom: 1.5rem;
+
+    a {
+        font-size: 1.2rem;
+        display: block;
+        color: white;
+    }
+
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-width: 1px 0 0 0;
+        border-style: solid;
+        border-color: white;
+    }
+}
+
+.adjust {
     .sp_navi_li {
         display: none;
+        margin-left: -10px;
         position: absolute;
         z-index: 10;
         background: #ff6d77;
@@ -87,7 +119,6 @@ a {
         list-style: none;
         padding: 15px 10px 15px 10px;
         margin-bottom: 1.5rem;
-
 
         a {
             font-size: 1.2rem;
@@ -103,24 +134,27 @@ a {
             border-color: white;
         }
     }
+}
 
-    .pc_navi {
-        display: none;
-        @media (min-width: 551px) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 20px auto 25px 0;
-            padding: 15px 0;
-        }
-
-        .pcmenu {
-            height: 10px;
-            align-self: flex-end;
-        }
+.pc_navi {
+    display: none;
+    @media (min-width: 551px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px auto 25px 0;
+        padding: 15px 0;
     }
 
+    .pcmenu {
+        height: 10px;
+        align-self: flex-end;
+    }
 }
+
+
+
+
 
 .owl-theme {
     .owl-nav.disabled+.owl-dots {
@@ -441,6 +475,20 @@ footer {
 
 .crumb {
     background-color: #e8e4da;
+    padding: 7px;
+    color: #887f69;
+    font-size: 1.2rem;
+    @media (min-width: 551px) {
+        margin: 0;
+    }
+
+    img {
+        margin: 0 5px 0 1px;
+    }
+}
+
+#product .crumb {
+    background-color: #e8e4da;
     margin: 0 10px;
     padding: 7px;
     color: #887f69;
@@ -453,6 +501,7 @@ footer {
         margin: 0 5px 0 1px;
     }
 }
+
 
 /* list */
 
